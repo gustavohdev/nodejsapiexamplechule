@@ -1,0 +1,46 @@
+{
+  "mongodb": {
+    "development": "mongodb://localhost:27017/development"
+  },
+  "jwt": {
+    "expiresIn": 1000,
+    "algorithm": "RS256"
+  },
+  "crypto": {
+    "algorithm": "aes-256-cbc",
+    "mysecret": "MyQueenLivesInMimosoDoSul"
+  },
+  "alerts": {
+    "error": "Erro inesperado - Verifique com o Administrador!",
+    "user": {
+      "create_success": "Usuario Cadastrado com Sucesso!",
+      "create_error": "Usuario já registrado, por gentileza verificar E-mail ou CPF!",
+      "cpf_required": "O CPF é obrigatório e precisa estar no formato válido!",
+      "email_required": "O e-mail é obrigatório e precisa estar no formato válido!",
+      "password_required": "Password obrigatório. Min 5 e max 10 caracteres!",
+      "cpf_check": "Informe um CPF válido!"
+    },
+    "login": {
+      "sucess": "Autenticação Válida! - Bem Vindo!",
+      "error": "Autenticação Inválida, por gentileza verifique os seus dados!",
+      "password_is_string": "Password tem que ser string, obrigatóriamente!"
+    },
+    "shop": {
+      "create_success": "Loja Cadastrada com Sucesso!",
+      "create_error": "Loja já registrada, por gentileza verificar o CNPJ!",
+      "cnpj_check": "Informe um CNPJ válido!"
+    },
+    "transaction": {
+      "create_success": "Transação realizada com sucesso!",
+      "credit_is_numeric": "O valor a ser transferido não está no formato válido, verifique!",
+      "credit_no_credit": "Não foi possível transferir o valor solicitado. Saldo insuficiente!",
+      "credit_maior_zero": "O valor a ser transferido tem que ser maior que zero!",
+      "check_cnpj_origem": "Loja de Origem não localizada, verifique o CNPJ!",
+      "check_cnpj_destino": "Loja de Destino não localizada, verifique o CNPJ!",
+      "check_origem_destino": "O CNPJ de Origem não pode ser o mesmo de Destino!"
+    },
+    "token": {
+      "is_null": "Token não informado, por gentileza efetuar login!"
+    }
+  }
+}
